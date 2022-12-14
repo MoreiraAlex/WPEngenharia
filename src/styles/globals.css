@@ -1,0 +1,28 @@
+/*======================================
+STYLES GENERALES
+======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+:root{
+  
+  font-size: 100%;
+
+  --color-primary: #fd5d14;
+  --color-secundary: #ca4102;
+  --color-text: #333333;
+  --color-acento: #030f27;
+  --gelo: #f1f1f1;
+  --white-custom: #ffffff8f;
+  --white: #ffff;
+  --black: #000000;
+}
+
+*{
+  color: var(--black);
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+}
