@@ -1,0 +1,143 @@
+.container {
+    min-height: 650px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0 200px 0;
+    overflow: hidden;
+}
+
+.container::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--color-acento);
+    opacity: 0.85;
+}
+
+.container > .banner{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerA {
+    background-image: url('../../assets/Páginas/HOME/BannerPrincipal/Construcao1.jpg');
+    animation: ZoomA 8s linear;    
+}
+
+.bannerB {
+    background-image: url('../../assets/Páginas/HOME/BannerPrincipal/Construcao2.jpg');
+    animation: ZoomB 8s linear forwards;  
+}
+
+.bannerC {
+    background-image: url('../../assets/Páginas/HOME/BannerPrincipal/Projeto1.jpg');
+    animation: ZoomC 8s linear; 
+}
+
+.bannerD {
+    background-image: url('../../assets/Páginas/HOME/BannerPrincipal/Projeto2.jpg');
+    animation: ZoomD 8s linear; 
+}
+
+@keyframes ZoomA{0%{opacity: 0;}10%{opacity: 1;}95%{opacity: 1;}100%{transform: scale(1.1);opacity: 0;}}
+@keyframes ZoomB{0%{opacity: 0;}10%{opacity: 1;}95%{opacity: 1;}100%{transform: scale(1.1);opacity: 0;}}
+@keyframes ZoomC{0%{opacity: 0;}10%{opacity: 1;}95%{opacity: 1;}100%{transform: scale(1.1);opacity: 0;}}
+@keyframes ZoomD{0%{opacity: 0;}10%{opacity: 1;}95%{opacity: 1;}100%{transform: scale(1.1);opacity: 0;}}
+
+.container > h1 {
+    color: var(--white);
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.2em;
+    width: 80vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container > p {
+    color: var(--white-custom);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2em;
+    width: 70vw;
+    min-width: 250px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container > button {
+    color: var(--white);
+    background-color: var(--color-primary);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    min-width: 200px;
+    text-align: center;
+    padding: 20px 60px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    transition: all 500ms;
+}
+
+.container > button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 80px 20px 120px 20px;
+        min-height: 600px;
+    }
+
+    .container > h1 {
+        font-size: 46px;
+    }
+
+    .container > p, .container > button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .container{
+        padding: 60px 10px 90px 10px;
+    }
+
+    .container > h1 {
+        font-size: 40px;
+    }
+
+    .container > p, .container > button {
+        font-size: 14px;
+    }
+
+    .container > p {
+        width: 80vw;
+    }
+
+    .container > button {
+        padding: 20px 15px;
+        width: 95%;
+    }
+}
