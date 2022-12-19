@@ -1,11 +1,16 @@
-.home > section:nth-of-type(2) {
+/*======================================
+DIFFERENTIALS
+======================================*/
+
+.differentials {
     background-color: var(--gelo);
+    padding: 0 20px;
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
 }
 
-.home > section:nth-of-type(2) > section{
+.differentials > section {
     background-color: var(--white);
     border-top: 2px solid var(--color-primary);
     box-shadow: 0px 10px 35px 5px rgb(0, 0, 0, 0.15);
@@ -13,44 +18,115 @@
     margin-top: -100px;
     position: relative;
     z-index: 1;
-    width: 80vw;
-    min-width: 750px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
+
+/*======================================
+ABOUT
+======================================*/
+
+.about{
+    background-image: url('../../assets/Backgrounds/BgBrancoGelo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+    padding-bottom: 100px;
+}
+
+.about > section {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.about > section > img {
+    width: 40%;
+    height: auto;
+}
+
+.about > section > section {
+    width: 65%;
+    margin-left: -5%;
+    padding: 30px;
+    background-color: var(--white);
+    border-top: 2px solid var(--color-primary);
+    box-shadow: 0px 10px 35px 5px rgb(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.about > section > section > section:last-of-type{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
 @media (max-width: 768px) {
 
-    .home > section:nth-of-type(2) {
+    .differentials {
         padding-bottom: 80px;
     }
 
-    .home > section:nth-of-type(2) > section{
-        width: 90vw;
-        min-width: 100px;
+    .differentials > section{
+        min-width: 300px;
+    }
+
+    .about{
+        padding-bottom: 80px;
     }
 }
 
 @media (max-width: 720px) {
 
-    .home > section:nth-of-type(2) > section{
+    .differentials > section{
         flex-wrap: wrap;
         gap: 50px;
         margin-top: -75px;
     }
 }
 
+@media (max-width: 700px) {
+
+    .about > section {
+        flex-direction: column;
+    }
+
+    .about > section > img {
+        width: 100%;
+    }
+    
+    .about > section > section {
+        width: auto;
+        margin-left: 0;
+    }
+
+}
+
 @media (max-width: 425px) {
 
-    .home > section:nth-of-type(2) {
+    .differentials {
         padding-bottom: 60px;
     }
 
-    .home > section:nth-of-type(2) > section{
+    .differentials > section{
         padding: 15px;
         margin-top: -45px;
         gap: 20px;
+    }
+
+    .about{
+        padding: 0 15px;
+        padding-bottom: 60px;
     }
 }

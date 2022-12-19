@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/components/bannerHome.module.css'
+import Button from './button'
 
 export default function BannerHome() {
 
@@ -37,7 +38,16 @@ export default function BannerHome() {
         <p>
           WP Engenharia dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <button>Peça o seu orçamento</button>
+        <Button
+          fontSize='18px'
+          color='#ffff'
+          backgroundColor='#fd5d14'
+          padding='20px 60px'
+          border={false}
+          hover={true}
+        >
+          Peça o seu orçamento
+        </Button>
     </section>
   )
 }

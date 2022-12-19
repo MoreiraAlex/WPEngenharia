@@ -78,29 +78,8 @@
     min-width: 250px;
     text-align: center;
     padding-top: 20px;
+    margin-bottom: 20px;
 }
-
-.container > button {
-    color: var(--white);
-    background-color: var(--color-primary);
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    min-width: 200px;
-    text-align: center;
-    padding: 20px 60px;
-    margin-top: 20px;
-    border: none;
-    outline: none;
-    transition: all 500ms;
-}
-
-.container > button:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 
 @media (max-width: 768px) {
 
@@ -113,7 +92,7 @@
         font-size: 46px;
     }
 
-    .container > p, .container > button {
+    .container > p{
         font-size: 16px;
     }
 }
@@ -128,16 +107,11 @@
         font-size: 40px;
     }
 
-    .container > p, .container > button {
+    .container > p {
         font-size: 14px;
     }
 
     .container > p {
         width: 80vw;
-    }
-
-    .container > button {
-        padding: 20px 15px;
-        width: 95%;
     }
 }
