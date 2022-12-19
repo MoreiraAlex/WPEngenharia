@@ -71,6 +71,39 @@ ABOUT
 }
 
 
+/*======================================
+SERVICES
+======================================*/
+
+.services {
+    padding: 100px 5px;
+}
+
+.services > section {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services > section > section:first-of-type {
+    margin: 15px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.services > section > section {
+    width: 30%;
+    min-width: 280px;
+    flex-grow: 1;
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -84,6 +117,10 @@ ABOUT
 
     .about{
         padding-bottom: 80px;
+    }
+
+    .services {
+        padding: 80px 5px;
     }
 }
 
@@ -128,5 +165,22 @@ ABOUT
     .about{
         padding: 0 15px;
         padding-bottom: 60px;
+    }
+
+    .about > section > section > section:last-of-type > p{
+        font-size: 14px;
+    }
+
+    .services {
+        padding: 60px 5px;
+    }
+
+    .services > section > section:first-of-type {
+        gap: 25px;
+        padding-right: 0;
+    }
+
+    .services > section > section:first-of-type > button {
+        align-self: center;
     }
 }

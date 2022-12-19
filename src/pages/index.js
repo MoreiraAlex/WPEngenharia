@@ -4,13 +4,21 @@ import Image from 'next/image'
 
 import BannerHome from '../components/bannerHome'
 import CardHome from '../components/cardHome'
+import Title from '../components/title'
+import Button from '../components/button'
+import CardService from '../components/cardService'
 
 import icone1 from '../assets/Icones/atendimentoPersonalizado.svg'
 import icone2 from '../assets/Icones/profissionaisQualificados.svg'
 import icone3 from '../assets/Icones/tecnologiaPonta.svg'
+
 import about from '../assets/Páginas/HOME/ResumoSobre.jpg'
-import Title from '../components/title'
-import Button from '../components/button'
+
+import service01 from '../assets/Páginas/HOME/Serviços/Pavimentação.png'
+import service02 from '../assets/Páginas/HOME/Serviços/LaudoTécnico.png'
+import service03 from '../assets/Páginas/HOME/Serviços/InfraestruturaUrbana.png'
+import service04 from '../assets/Páginas/HOME/Serviços/Fundações.png'
+import service05 from '../assets/Páginas/HOME/Serviços/Construção.png'
 
 export default function Home() {
   return (
@@ -71,6 +79,55 @@ export default function Home() {
               Saiba mais
             </Button>
           </section>
+        </section>
+      </section>
+      <section className={styles.services}>
+        <section>
+          <section>
+            <Title 
+              title='Nossos Serviços'
+              span='Conheça os'
+              h={2}
+              border={true}
+              color='#030f27'
+            />
+            <Button
+              fontSize='16px'
+              color='#ffff'
+              backgroundColor='#fd5d14'
+              padding='15px 40px'
+              border={false}
+              hover={false}
+            >
+              Saiba mais
+            </Button>
+          </section>
+          <CardService 
+            img={service01} 
+            title='Pavimentação' 
+            span='Lorem ipsum dolor sit amet consectetur adipiscing elit dolor'
+          />
+          <CardService 
+            img={service02} 
+            title='Laudo Técnico' 
+            span='Lorem ipsum dolor sit amet consectetur adipiscing elit dolor'
+          />
+          <CardService 
+            img={service03} 
+            title='Infraestrutura Urbana' 
+            span='Lorem ipsum dolor sit amet consectetur adipiscing elit dolor'
+          />
+          <CardService 
+            img={service04} 
+            title='Fundações' 
+            span='Lorem ipsum dolor sit amet consectetur adipiscing elit dolor'
+          />
+          <CardService 
+            img={service05} 
+            title='Construção Civil' 
+            span='Lorem ipsum dolor sit amet consectetur adipiscing elit dolor'
+          />
+
         </section>
       </section>
     </>
