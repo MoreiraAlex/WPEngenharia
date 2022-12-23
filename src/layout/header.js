@@ -18,10 +18,22 @@ export default function Header() {
   
   useEffect(() => {
     const navFixed = () => {
-      if(window.scrollY >= 100){
-        setFixed(true)
+      if(window.innerWidth >= 600 && window.innerWidth <= 850){
+
+        if(window.scrollY >= 180){
+          setFixed(true)
+        } else {
+          setFixed(false)
+        }
+
       } else {
-        setFixed(false)
+
+        if(window.scrollY >= 100){
+          setFixed(true)
+        } else {
+          setFixed(false)
+        }
+
       }
     }
     window.addEventListener('scroll', navFixed)
