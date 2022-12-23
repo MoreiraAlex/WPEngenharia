@@ -9,6 +9,8 @@ import Button from '../components/button'
 import CardService from '../components/cardService'
 import Slider from '../components/slider'
 import CardSlide from '../components/cardSlide'
+import CallAction from '../layout/callAction'
+import Header from '../layout/header'
 
 import icone1 from '../assets/Icones/atendimentoPersonalizado.svg'
 import icone2 from '../assets/Icones/profissionaisQualificados.svg'
@@ -32,11 +34,11 @@ import partners06 from '../assets/Páginas/HOME/Parceiros/parceiro6.png'
 import dep01 from '../assets/Páginas/HOME/Depoimentos/1.jpg'
 import dep02 from '../assets/Páginas/HOME/Depoimentos/2.jpg'
 import dep03 from '../assets/Páginas/HOME/Depoimentos/3.jpg'
-import CallAction from '../layout/callAction'
 
 export default function Home() {
   return (
     <>
+      <Header/>
       <BannerHome/>
       <section className={styles.differentials}>
         <section>

@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.card > span {
+    border: 2px solid var(--color-primary);
+    padding: 5px;
+}
+
+.card > span > svg {
+    width: 20px;
+    height: auto;
+    fill: var(--color-primary);
+}
+
+.card > section {
+    display: flex;
+    flex-direction: column;
+}
+
+.card > section > span:first-of-type{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card > section > span:last-of-type{
+    color: var(--white-custom);
+}
