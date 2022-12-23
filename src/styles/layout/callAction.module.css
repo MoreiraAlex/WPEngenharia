@@ -1,0 +1,63 @@
+.call {
+    padding: 100px 20px;
+    background-color: var(--color-secundary);
+}
+
+.call > section{
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.call > section > h2{
+    color: var(--white);
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+}
+
+.call > section > h2::after{
+    position: absolute;
+    content: '';
+    width: 20%;
+    height: 100%;
+    top: 20%;
+    left: 50%;
+    border-bottom: 4px solid var(--color-acento);
+    transform: translate(-50%,0);
+}
+
+.call > section > p {
+    text-align: center;
+    color: var(--white);
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .call {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .call {
+        padding: 60px 20px;
+    }
+
+    .call > section > h2{
+        font-size: 36px;
+    }
+    
+    .call > section > h2::after{
+        width: 30%;
+        top: 5%;
+    }
+    
+    .call > section > p {
+        font-size: 16px;
+    }
+}
