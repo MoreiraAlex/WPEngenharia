@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+    width: 50%;
+}
+
+.card > p {
+    font-weight: 600;
+    color: gray;
+}
+
+.card > section {
+    display: flex;
+    gap: 20px;
+}
+
+.card > section > img {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+
+.card > section > section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.card > section > section > span:first-of-type {
+    font-weight: 600;
+    color: var(--white);
+}
+
+.card > section > section > span:last-of-type {
+    color: var(--color-primary);
+}
+
+
+
+@media (max-width: 720px) {
+
+    .card {
+        width: 100%;
+    }
+}

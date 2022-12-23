@@ -1,0 +1,55 @@
+.slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;    
+}
+
+.slider > span {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.slider > span:hover {
+    cursor: pointer;
+}
+
+.slider > span:last-of-type {
+    left: 100%;
+    transform: translate(-100%,0);
+    display: flex;
+    justify-content: end;
+}
+
+.slider > span > svg{
+    width: 30px;
+    height: auto;
+    fill: var(--color-primary);
+}
+
+
+.slider > section{
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider > section::-webkit-scrollbar {
+    display: none;
+}
+
+.slider > section > :nth-child(n){
+    flex: none;
+    scroll-snap-align: start;
+}
+
+.notIcon > span > svg{
+    display: none;
+}
+

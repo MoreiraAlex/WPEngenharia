@@ -7,6 +7,8 @@ import CardHome from '../components/cardHome'
 import Title from '../components/title'
 import Button from '../components/button'
 import CardService from '../components/cardService'
+import Slider from '../components/slider'
+import CardSlide from '../components/cardSlide'
 
 import icone1 from '../assets/Icones/atendimentoPersonalizado.svg'
 import icone2 from '../assets/Icones/profissionaisQualificados.svg'
@@ -19,6 +21,17 @@ import service02 from '../assets/Páginas/HOME/Serviços/LaudoTécnico.png'
 import service03 from '../assets/Páginas/HOME/Serviços/InfraestruturaUrbana.png'
 import service04 from '../assets/Páginas/HOME/Serviços/Fundações.png'
 import service05 from '../assets/Páginas/HOME/Serviços/Construção.png'
+
+import partners01 from '../assets/Páginas/HOME/Parceiros/parceiro1.png'
+import partners02 from '../assets/Páginas/HOME/Parceiros/parceiro2.png'
+import partners03 from '../assets/Páginas/HOME/Parceiros/parceiro3.png'
+import partners04 from '../assets/Páginas/HOME/Parceiros/parceiro4.png'
+import partners05 from '../assets/Páginas/HOME/Parceiros/parceiro5.png'
+import partners06 from '../assets/Páginas/HOME/Parceiros/parceiro6.png'
+
+import dep01 from '../assets/Páginas/HOME/Depoimentos/1.jpg'
+import dep02 from '../assets/Páginas/HOME/Depoimentos/2.jpg'
+import dep03 from '../assets/Páginas/HOME/Depoimentos/3.jpg'
 
 export default function Home() {
   return (
@@ -48,7 +61,7 @@ export default function Home() {
       </section>
       <section className={styles.about}>
         <section>
-          <Image src={about} quality={100}/>
+          <Image src={about} quality={100} alt='Imagem sobre a empresa'/>
           <section>
             <Title 
               title='Sobre a Empresa'
@@ -128,6 +141,52 @@ export default function Home() {
             span='Lorem ipsum dolor sit amet consectetur adipiscing elit dolor'
           />
 
+        </section>
+      </section>
+      <section className={styles.depositions}>
+        <section>
+          <Title 
+            title='Dizendo Sobre Nós'
+            span='O QUE ESTÃO'
+            h={2}
+            border={true}
+            color='#ffff'
+          />
+          <section>
+            <Slider button={true} offset={350}>
+              <CardSlide 
+                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+                img={dep01}
+                name='John Doe'
+                status='CEO'
+              />
+              <CardSlide 
+                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+                img={dep02}
+                name='John Doe'
+                status='CEO'
+              />
+              <CardSlide 
+                text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.'
+                img={dep03}
+                name='John Doe'
+                status='CEO'
+              />
+            </Slider>
+          </section>
+          <section>
+            <span>Empresas que já passaram por aqui:</span>
+            <section>
+              <Slider button={false} offset={250} gap='25px'>
+                <Image src={partners01} quality={100} alt='Empresas parceiras' height={125}/>
+                <Image src={partners02} quality={100} alt='Empresas parceiras' height={125}/>
+                <Image src={partners03} quality={100} alt='Empresas parceiras' height={125}/>
+                <Image src={partners04} quality={100} alt='Empresas parceiras' height={125}/>
+                <Image src={partners05} quality={100} alt='Empresas parceiras' height={125}/>
+                <Image src={partners06} quality={100} alt='Empresas parceiras' height={125}/>
+              </Slider>
+            </section>
+          </section>
         </section>
       </section>
     </>

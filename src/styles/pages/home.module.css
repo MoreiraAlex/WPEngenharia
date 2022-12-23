@@ -104,6 +104,52 @@ SERVICES
 }
 
 
+/*======================================
+DEPOSITIONS
+======================================*/
+
+.depositions {
+    padding: 100px 20px;
+    background-image: url('../../assets/Backgrounds/BGDepoimentos.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.depositions > section{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.depositions > section > section:nth-of-type(3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.depositions > section > section:nth-of-type(3) > span {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--white);
+    width: 50%;
+    border-left: 2px solid var(--color-primary);
+    padding-left: 15px;
+    line-height: 1.2em;
+}
+
+.depositions > section > section:nth-of-type(3) > section {
+    width: 50%;
+}
+
+.depositions > section > section:nth-of-type(3) > section > section > section > img {
+    width: 30%;
+    height: auto;
+}
+
 
 @media (max-width: 768px) {
 
@@ -121,6 +167,15 @@ SERVICES
 
     .services {
         padding: 80px 5px;
+    }
+    
+    .depositions {
+        padding: 80px 20px;
+        background-position: right top;
+    }
+
+    .depositions > section > section:nth-of-type(3) > section > section > section > img {
+        width: 45%;
     }
 }
 
@@ -148,6 +203,19 @@ SERVICES
         margin-left: 0;
     }
 
+    .depositions > section > section:nth-of-type(3) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .depositions > section > section:nth-of-type(3) > span {
+        width: auto;
+    }
+
+    .depositions > section > section:nth-of-type(3) > section {
+        width: 75%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -175,12 +243,28 @@ SERVICES
         padding: 60px 5px;
     }
 
-    .services > section > section:first-of-type {
-        gap: 25px;
-        padding-right: 0;
+    .services > section > section:first-of-type > button {
+        display: none;
     }
 
-    .services > section > section:first-of-type > button {
-        align-self: center;
+    .depositions {
+        padding: 60px 20px;
+        background-position: left top;
+    }
+
+    .depositions > section{
+        gap: 25px;
+    }
+
+    .depositions > section > section:nth-of-type(3) {
+        gap: 20px;
+    }
+
+    .depositions > section > section:nth-of-type(3) > span {
+        font-size: 20px;
+    }
+
+    .depositions > section > section:nth-of-type(3) > section {
+        width: 100%;
     }
 }
