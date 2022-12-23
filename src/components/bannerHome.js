@@ -34,20 +34,22 @@ export default function BannerHome() {
           `}
         >
         </div>
-        <h1>Tiramos o seu projeto dos sonhos do papel</h1>
-        <p>
-          WP Engenharia dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-        </p>
-        <Button
-          fontSize='18px'
-          color='#ffff'
-          backgroundColor='#fd5d14'
-          padding='20px 60px'
-          border={false}
-          hover={true}
-        >
-          Peça o seu orçamento
-        </Button>
+        <section>
+          <h1>Tiramos o seu projeto dos sonhos do papel</h1>
+          <p>
+            WP Engenharia dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <Button
+            fontSize='18px'
+            color='#ffff'
+            backgroundColor='#fd5d14'
+            padding='20px 60px'
+            border={false}
+            hover={true}
+          >
+            Peça o seu orçamento
+          </Button>
+        </section>
     </section>
   )
 }

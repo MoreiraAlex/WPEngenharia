@@ -141,7 +141,6 @@ export default function Home() {
             title='Construção Civil' 
             span='Lorem ipsum dolor sit amet consectetur adipiscing elit dolor'
           />
-
         </section>
       </section>
       <section className={styles.depositions}>
