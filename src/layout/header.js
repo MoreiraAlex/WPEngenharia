@@ -61,13 +61,13 @@ export default function Header() {
               <Link href=''>Início</Link>
             </li>
             <li>
-              <Link href=''>Sobre</Link>
+              <Link href='about'>Sobre</Link>
             </li>
             <li>
-              <Link href=''>Serviços</Link>
+              <Link href='services'>Serviços</Link>
             </li>
             <li>
-              <Link href=''>Contato</Link>
+              <Link href='contact'>Contato</Link>
             </li>
           </ul>
           <button onClick={() => {button ? setButton(false) : setButton(true)}}>
