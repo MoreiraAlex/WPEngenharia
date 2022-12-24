@@ -1,0 +1,49 @@
+.banner {
+    padding: 0 20px;
+    padding-top: 60px;
+    background-image: url('../../assets/Backgrounds/MiniBannerPaginas.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner > section {
+    max-width: 1200px;
+    min-height: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner > section > h1 {
+    color: var(--color-primary);
+    font-size: 65px;
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+        background-position: right;
+    }
+
+    .banner > section {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .banner {
+        background-position: center;
+    }
+
+    .banner > section {
+        min-height: 250px;
+        justify-content: center;
+    }
+
+    .banner > section > h1 {
+        font-size: 55px;
+    }
+}
