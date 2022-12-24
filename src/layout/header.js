@@ -58,7 +58,7 @@ export default function Header() {
         <section>
           <ul className={`${button ? styles.mobile_active : null}`}>
             <li>
-              <Link href=''>Início</Link>
+              <Link href='/'>Início</Link>
             </li>
             <li>
               <Link href='about'>Sobre</Link>
