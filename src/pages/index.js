@@ -34,6 +34,7 @@ import partners06 from '../assets/Páginas/HOME/Parceiros/parceiro6.png'
 import dep01 from '../assets/Páginas/HOME/Depoimentos/1.jpg'
 import dep02 from '../assets/Páginas/HOME/Depoimentos/2.jpg'
 import dep03 from '../assets/Páginas/HOME/Depoimentos/3.jpg'
+import Footer from '../layout/footer'
 
 export default function Home() {
   return (
@@ -192,6 +193,7 @@ export default function Home() {
         </section>
       </section>
       <CallAction/>
+      <Footer/>
     </>
   )
 }

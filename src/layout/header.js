@@ -43,7 +43,7 @@ export default function Header() {
     <header className={styles.header}>
       <section>
         <section>
-          <Image src={logo} quality={100}/> 
+          <Image src={logo} quality={100} alt='Logo da pagina'/> 
           <section>
             <CardHeader title='99 99999-9999' sub='Fale Conosco'>
               <BiPhone/>

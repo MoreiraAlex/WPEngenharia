@@ -1,0 +1,236 @@
+.footer {
+    background-image: url('../../assets/Backgrounds/BGRodape.jpg');
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    padding-bottom: 0;
+}
+
+.footer > section {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.footer > section > section:first-of-type {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer > section > section:first-of-type > section {
+    width: 20%;
+    min-width: 200px;
+}
+
+.footer > section > section:first-of-type > section > section > h2 {
+    font-size:  24px!important;
+}
+
+.footer > section > section:first-of-type > section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer > section > section:first-of-type > section:nth-child(1) > a > img {
+    width: 100%;
+    height: auto;
+}
+
+.footer > section > section:first-of-type > section:nth-child(1) > p {
+    color: gray;
+}
+
+.footer > section > section:first-of-type > section:nth-child(1) > ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer > section > section:first-of-type > section:nth-child(1) > ul > li {
+    list-style: none;
+    background-color: var(--color-primary);
+    padding: 10px;
+    transition: all 400ms;
+}
+
+.footer > section > section:first-of-type > section:nth-child(1) > ul > li:hover {
+    cursor: pointer;
+    background-color: var(--color-secundary);
+    transform: translate(0, -10%);
+}
+
+.footer > section > section:first-of-type > section:nth-child(1) > ul > li > svg {
+    fill: var(--white);
+    width: 25px;
+    height: auto;
+}
+
+.footer > section > section:first-of-type > section:nth-child(2),
+.footer > section > section:first-of-type > section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.footer > section > section:first-of-type > section:nth-child(2) > ul,
+.footer > section > section:first-of-type > section:nth-child(3) > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer > section > section:first-of-type > section:nth-child(2) > ul > li,
+.footer > section > section:first-of-type > section:nth-child(3) > ul > li{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer > section > section:first-of-type > section:nth-child(2) > ul > li > svg{
+    fill: var(--color-primary);
+    transition: 200ms;
+    /* width: 20px; */
+    height: auto;
+}
+
+.footer > section > section:first-of-type > section:nth-child(2) > ul > li > span{
+    transition: 200ms;
+    color: gray;
+}
+
+.footer > section > section:first-of-type > section:nth-child(2) > ul > li:hover > svg{
+    fill: var(--color-secundary);
+}
+
+.footer > section > section:first-of-type > section:nth-child(2) > ul > li:hover > span{
+    color: var(--white);
+}
+
+.footer > section > section:first-of-type > section:nth-child(3) > ul > li > a{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer > section > section:first-of-type > section:nth-child(3) > ul > li > a > svg{
+    fill: var(--color-primary);
+    transition: 200ms;
+}
+
+.footer > section > section:first-of-type > section:nth-child(3) > ul > li > a > span{
+    transition: 200ms;
+    color: gray;
+}
+
+.footer > section > section:first-of-type > section:nth-child(3) > ul > li:hover > a > svg{
+    fill: var(--color-secundary);
+}
+
+.footer > section > section:first-of-type > section:nth-child(3) > ul > li:hover > a > span{
+    color: var(--white);
+}
+
+.footer > section > section:first-of-type > section:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer > section > section:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 30px 0;
+    position: relative;
+}
+
+.footer > section > section:last-of-type::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-top: 1px solid var(--color-primary);
+}
+
+.footer > section > section:last-of-type > span {
+    color: lightgray;
+    text-align: center;
+}
+
+.footer > section > section:last-of-type > span > a {
+    color: gray;
+    transition: 200ms;
+}
+
+.footer > section > section:last-of-type > span > a:hover {
+    color: lightgray;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .footer {
+        background-image: url('../../assets/Backgrounds/BGRodapeResponsivo.jpg');
+    }
+
+    .footer > section > section:first-of-type > section {
+        flex-grow: 1;
+    }
+
+    .footer > section > section:first-of-type > section:nth-child(1) {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer > section > section:first-of-type > section:nth-child(1) > p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 80px 20px;
+        padding-bottom: 0;
+    }
+
+    .footer > section {
+        gap: 80px;
+    }
+
+    .footer > section > section:first-of-type {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .footer {
+        padding: 60px 20px;
+        padding-bottom: 0;
+    }
+
+    .footer > section {
+        gap: 60px;
+    }
+
+    .footer > section > section:first-of-type > section:nth-child(1) {
+        align-items: flex-start;
+    }
+
+    .footer > section > section:first-of-type > section:nth-child(1) > p {
+        text-align: left;
+    }
+}
