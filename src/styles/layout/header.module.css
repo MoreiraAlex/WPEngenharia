@@ -26,7 +26,7 @@
 
 .header > nav {
     position: absolute;
-    z-index: 5;
+    z-index: 100;
     width: 100%;
     top: 100px;
     background-color: var(--color-primary);
@@ -80,6 +80,7 @@
 
 .header > nav > section > ul > li:hover{
     background-color: var(--color-secundary);
+    cursor: pointer;
 }
 
 .header > nav > section > button {
