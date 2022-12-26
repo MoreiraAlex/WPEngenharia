@@ -109,6 +109,28 @@ export default function About() {
                 </section>
             </section>
         </section>
+        <section className={styles.history}>
+            <section>
+                <Title
+                    title='Nossa História'
+                    span='CONHEÇA A'
+                    h={2}
+                    border={true}
+                    color='#ffff'
+                />
+                <section>
+                    <section>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque non elit interdum efficitur quis ac metus. Donec vel sollicitudin augue, ac venenatis tellus. Morbi cursus nunc purus, eu imperdiet arcu rutrum ut. Curabitur vitae justo facilisis, lobortis diam id, pellentesque sem.
+                        </p>
+                        <p>
+                            Nunc et eros eget magna consectetur sagittis in quis quam. Etiam ipsum libero, aliquet et sagittis vitae, dapibus bibendum ante. Quisque cursus venenatis magna. Curabitur varius sem massa, vel varius enim scelerisque nec. Sed vitae lacus eu erat scelerisque luctus eu sit amet nulla. Curabitur varius sem massa, vel varius enim scelerisque nec. Sed vitae lacus eu erat scelerisque luctus eu sit amet nulla.
+                        </p>
+                    </section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/a8ehZ-3JZUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </section>
+        </section>
         <CallAction/>
         <Footer/>
     </>
