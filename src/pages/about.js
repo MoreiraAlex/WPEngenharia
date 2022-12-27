@@ -14,7 +14,7 @@ import icone1 from '../assets/Icones/missao.svg'
 import icone2 from '../assets/Icones/visao.svg'
 import icone3 from '../assets/Icones/valores.svg'
 
-import about from '../assets/Páginas/SOBRE/SobreWPEngenharia.jpg'
+import about from '../assets/Páginas/SOBRE/Resumo.jpg'
 
 import team01 from '../assets/Páginas/SOBRE/Equipe/1.jpg'
 import team02 from '../assets/Páginas/SOBRE/Equipe/2.jpg'
@@ -26,7 +26,7 @@ export default function About() {
     return (
     <>
         <Header/>
-        <Banner title='Serviços'/>
+        <Banner title='Sobre'/>
         <section className={styles.about}>
             <section>
                 <section>
