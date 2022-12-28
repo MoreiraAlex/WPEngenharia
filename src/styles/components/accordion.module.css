@@ -1,0 +1,78 @@
+.accordion {
+    width: 100%;
+    position: relative;
+}
+
+.accordion > header {
+    background-color: rgb(3, 15, 39, 0.75);
+    border-bottom: 2px solid var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+
+.accordion > header:hover {
+    cursor: pointer;
+}
+
+.accordion > header > h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--white);
+    transition: all 500ms;
+}
+
+.accordionOpen > header {
+    border: none;
+}
+
+.accordionOpen > header > h3 {
+    color: var(--color-primary);
+}
+
+.accordion > main {
+    background-color: rgb(3, 15, 39, 0.5);
+    height: 0;
+    overflow-y: hidden;
+    transition: 3000ms;
+    transition: height 500ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordionOpen > main {
+    height: 100px;
+    border-bottom: 2px solid var(--color-primary);    
+}
+
+.accordion p {
+    padding: 30px 20px;
+    text-align: start;
+    font-weight: 500;
+    color: var(--white-custom);
+}
+
+.icon {
+    font-size: 40px;
+    fill: var(--white);
+    transition: all 500ms;
+}
+
+.iconOpen {
+    transform: rotate(180deg);
+    fill: var(--color-primary);
+}
+
+
+@media (max-width: 425px) {
+
+    .accordionOpen > main {
+        height: 130px;
+    }
+
+    .accordion p {
+        padding: 15px 20px;
+    }
+}

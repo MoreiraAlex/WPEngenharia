@@ -18,6 +18,7 @@ import detail02 from '../assets/Páginas/SERVIÇOS/Pavimentação.jpg'
 import detail03 from '../assets/Páginas/SERVIÇOS/InsfraestruturaUrbana.jpg'
 import detail04 from '../assets/Páginas/SERVIÇOS/LaudoTecnico.jpg'
 import detail05 from '../assets/Páginas/SERVIÇOS/Fundações.jpg'
+import Accordion from './accordion'
 
 
 export default function Services() {
@@ -75,6 +76,39 @@ export default function Services() {
       <DetailService id='infrastructure' img={detail03} title='Infraestrutura Urbana' titleColor='#030f27' color='#ffff'/>
       <DetailService id='report' img={detail04} title='Laudo Técnico' titleColor='#ffff' order={1} color='#030f27'/>
       <DetailService id='foundations' img={detail05} title='Fundações' titleColor='#030f27' color='#ffff'/>
+      <section className={styles.questions}>
+        <section>
+          <Title
+            title='Perguntas Frequentes'
+            span='FAQ'
+            h={2}
+            border={true}
+            color='#ffff'
+          />          
+          <section>
+            <Accordion
+              title='Pergunta 1'
+              text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque non elit interdum efficitur quis ac metus.'
+            />
+            <Accordion
+              title='Pergunta 2'
+              text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque non elit interdum efficitur quis ac metus.'
+            />
+            <Accordion
+              title='Pergunta 3'
+              text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque non elit interdum efficitur quis ac metus.'
+            />
+            <Accordion
+              title='Pergunta 4'
+              text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque non elit interdum efficitur quis ac metus.'
+            />
+            <Accordion
+              title='Pergunta 5'
+              text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed neque non elit interdum efficitur quis ac metus.'
+            />
+          </section> 
+        </section>
+      </section>
       <CallAction/>
       <Footer/>
     </>
