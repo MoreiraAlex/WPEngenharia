@@ -81,9 +81,17 @@
     .detail > section > section{
         width: 100%;
     }
+
+    .orderLeft, .orderRight {
+        order: 1;
+    }
+
+    .left::before, .right::before{
+        width: 40%;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
 
     .detail {
         padding: 60px 20px;
@@ -96,5 +104,4 @@
     .left::before, .right::before{
         width: 50%;
     }
-
 }
