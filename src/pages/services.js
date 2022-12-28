@@ -9,8 +9,15 @@ import CallAction from '../layout/callAction'
 import Footer from '../layout/footer'
 import Banner from '../components/banner'
 import Title from '../components/title'
+import DetailService from '../components/detailService'
 
 import resume from '../assets/Páginas/SERVIÇOS/SobreWPEngenharia.jpg'
+
+import detail01 from '../assets/Páginas/SERVIÇOS/Construção.jpg'
+import detail02 from '../assets/Páginas/SERVIÇOS/Pavimentação.jpg'
+import detail03 from '../assets/Páginas/SERVIÇOS/InsfraestruturaUrbana.jpg'
+import detail04 from '../assets/Páginas/SERVIÇOS/LaudoTecnico.jpg'
+import detail05 from '../assets/Páginas/SERVIÇOS/Fundações.jpg'
 
 
 export default function Services() {
@@ -44,25 +51,30 @@ export default function Services() {
               <h3>Clique na opção de serviço que deseja saber mais:</h3>
               <ul>
                 <li>
-                  <Link to='' spy={true} smooth={true} offset={0} duration={800}>Construção Civil</Link>
+                  <Link to='construction' spy={true} smooth={true} offset={-100} duration={400}>Construção Civil</Link>
                 </li>
                 <li>
-                  <Link to='' spy={true} smooth={true} offset={0} duration={800}>Pavimentação</Link>
+                  <Link to='paving' spy={true} smooth={true} offset={-100} duration={600}>Pavimentação</Link>
                 </li>
                 <li>
-                  <Link to='' spy={true} smooth={true} offset={0} duration={800}>Infraestrutura Urbana</Link>
+                  <Link to='infrastructure' spy={true} smooth={true} offset={-100} duration={800}>Infraestrutura Urbana</Link>
                 </li>
                 <li>
-                  <Link to='' spy={true} smooth={true} offset={0} duration={800}>Laudo Técnico</Link>
+                  <Link to='report' spy={true} smooth={true} offset={-100} duration={1000}>Laudo Técnico</Link>
                 </li>
                 <li>
-                  <Link to='' spy={true} smooth={true} offset={0} duration={800}>Fundações</Link>
+                  <Link to='foundations' spy={true} smooth={true} offset={-100} duration={1200}>Fundações</Link>
                 </li>
               </ul>
             </section>
           </section>
         </section>
       </section>
+      <DetailService id='construction' img={detail01} title='Construção Civil' titleColor='#030f27' color='#ffff'/>
+      <DetailService id='paving' img={detail02} title='Pavimentação' titleColor='#ffff' order={1} color='#030f27'/>
+      <DetailService id='infrastructure' img={detail03} title='Infraestrutura Urbana' titleColor='#030f27' color='#ffff'/>
+      <DetailService id='report' img={detail04} title='Laudo Técnico' titleColor='#ffff' order={1} color='#030f27'/>
+      <DetailService id='foundations' img={detail05} title='Fundações' titleColor='#030f27' color='#ffff'/>
       <CallAction/>
       <Footer/>
     </>
