@@ -98,7 +98,6 @@
 .footer > section > section:first-of-type > section:nth-child(2) > ul > li > svg{
     fill: var(--color-primary);
     transition: 200ms;
-    /* width: 20px; */
     height: auto;
 }
 

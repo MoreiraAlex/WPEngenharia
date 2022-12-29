@@ -10,6 +10,7 @@ import Footer from '../layout/footer'
 import Banner from '../components/banner'
 import Title from '../components/title'
 import DetailService from '../components/detailService'
+import Accordion from '../components/accordion'
 
 import resume from '../assets/Páginas/SERVIÇOS/SobreWPEngenharia.jpg'
 
@@ -18,7 +19,6 @@ import detail02 from '../assets/Páginas/SERVIÇOS/Pavimentação.jpg'
 import detail03 from '../assets/Páginas/SERVIÇOS/InsfraestruturaUrbana.jpg'
 import detail04 from '../assets/Páginas/SERVIÇOS/LaudoTecnico.jpg'
 import detail05 from '../assets/Páginas/SERVIÇOS/Fundações.jpg'
-import Accordion from './accordion'
 
 
 export default function Services() {
