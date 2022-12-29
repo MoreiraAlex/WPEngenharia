@@ -1,0 +1,205 @@
+.contact {
+    background-image: url('../../assets/Backgrounds/BgBrancoGelo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 100px 20px;
+}
+
+.contact > section {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contact > section > section:first-of-type{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    flex-grow: 1; 
+}
+
+.contact > section > section:first-of-type > ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact > section > section:first-of-type > ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact > section > section:first-of-type > ul > li > span{
+    background-color: var(--color-primary);
+    padding: 5px;
+    display: flex;
+    transition: 400ms;
+}
+
+.contact > section > section:first-of-type > ul > li > span:hover{
+    background-color: var(--color-secundary);
+}
+
+.contact > section > section:first-of-type > ul > li > span > svg{
+    fill: var(--white);
+    width: 30px;
+    height: auto;
+}
+
+.contact > section > section:first-of-type > ul > li > section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact > section > section:first-of-type > ul > li > section > span:first-of-type{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--color-acento);
+}
+
+.contact > section > section:first-of-type > ul > li > section > span:last-of-type{
+    color: gray
+}
+
+.contact > section > section:first-of-type > iframe{
+    height: 250px;
+}
+
+.contact > section > section:last-of-type{
+    width: 50%;
+    padding: 30px;
+    background-color: var(--white);
+    border-top: 2px solid var(--color-primary);
+    box-shadow: 0px 10px 35px 5px rgb(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex-grow: 1; 
+}
+
+.contact > section > section:last-of-type > section:first-of-type > h3{
+    font-size: 30px;
+}
+
+.contact > section > section:last-of-type > form label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.contact > section > section:last-of-type > form > section{
+    display: flex;
+    gap: 20px;
+}
+
+.contact > section > section:last-of-type > form > section > label{
+    width: 50%;
+}
+
+.contact > section > section:last-of-type > form label > input{
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.contact > section > section:last-of-type > form label > textarea{
+    height: 75px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.contact > section > section:last-of-type > form > button{
+    border: none;
+    outline: none;
+    color: var(--white);
+    background-color: var(--color-acento);
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 400ms;
+}
+
+.contact > section > section:last-of-type > form > button:hover{
+    cursor: pointer;
+    background-color: var(--color-primary);
+}
+
+.contact > section > section:last-of-type > section:last-of-type > h3{
+    font-size: 30px;
+}
+
+.contact > section > section:last-of-type > ul {
+    display: flex;
+    gap: 10px;
+}
+
+.contact > section > section:last-of-type > ul > li {
+    list-style: none;
+    background-color: var(--color-primary);
+    padding: 10px;
+    transition: all 400ms;
+}
+
+.contact > section > section:last-of-type > ul > li:hover {
+    cursor: pointer;
+    background-color: var(--color-secundary);
+    transform: translate(0, -10%);
+}
+
+.contact > section > section:last-of-type > ul > li > svg {
+    fill: var(--white);
+    width: 25px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact > section > section:last-of-type > form > section{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .contact > section > section:last-of-type > form > section > label{
+        width: 100%;
+    }
+
+    .contact > section > section:last-of-type{
+        padding: 30px 15px;
+    }
+
+    .contact > section > section:first-of-type > ul > li > section > span:first-of-type{
+        font-size: 16px;
+    }
+    
+    .contact > section > section:first-of-type > ul > li > section > span:last-of-type{
+        font-size: 14px;
+    }
+
+    .contact > section > section:last-of-type > section:first-of-type > h3,
+    .contact > section > section:last-of-type > section:last-of-type > h3{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 425px) {
+    .contact {
+        padding: 60px 20px;
+    }
+}
