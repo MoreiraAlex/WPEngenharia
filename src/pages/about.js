@@ -20,11 +20,13 @@ import team01 from '../assets/Páginas/SOBRE/Equipe/1.jpg'
 import team02 from '../assets/Páginas/SOBRE/Equipe/2.jpg'
 import team03 from '../assets/Páginas/SOBRE/Equipe/3.jpg'
 import team04 from '../assets/Páginas/SOBRE/Equipe/4.jpg'
+import Head from '../layout/head'
 
 
 export default function About() {
     return (
     <>
+        <Head title='Sobre'/>
         <Header/>
         <Banner title='Sobre'/>
         <section className={styles.about}>

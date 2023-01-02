@@ -6,10 +6,12 @@ import Title from '../components/title'
 import Button from '../components/button'
 import Header from '../layout/header'
 import Footer from '../layout/footer'
+import Head from '../layout/head'
 
 export default function NoFound(){
     return(
         <>
+            <Head title='Página não encontrada'/>
             <Header/>
             <section className={styles.noFound}>
                 <section>

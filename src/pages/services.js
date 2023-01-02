@@ -19,11 +19,13 @@ import detail02 from '../assets/Páginas/SERVIÇOS/Pavimentação.jpg'
 import detail03 from '../assets/Páginas/SERVIÇOS/InsfraestruturaUrbana.jpg'
 import detail04 from '../assets/Páginas/SERVIÇOS/LaudoTecnico.jpg'
 import detail05 from '../assets/Páginas/SERVIÇOS/Fundações.jpg'
+import Head from '../layout/head'
 
 
 export default function Services() {
   return (
     <>
+      <Head title='Serviços'/>
       <Header/>
       <Banner title='Serviços'/>
       <section className={styles.about}>

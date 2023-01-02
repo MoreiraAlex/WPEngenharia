@@ -35,11 +35,13 @@ import partners06 from '../assets/Páginas/HOME/Parceiros/parceiro6.png'
 import dep01 from '../assets/Páginas/HOME/Depoimentos/1.jpg'
 import dep02 from '../assets/Páginas/HOME/Depoimentos/2.jpg'
 import dep03 from '../assets/Páginas/HOME/Depoimentos/3.jpg'
+import Head from '../layout/head'
 
 
 export default function Home() {
   return (
     <>
+      <Head title='Início'/>
       <Header/>
       <BannerHome/>
       <section className={styles.differentials}>

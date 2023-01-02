@@ -8,10 +8,12 @@ import Title from '../components/title'
 
 import { BiPhone, BiEnvelope, BiMap } from 'react-icons/bi'
 import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import Head from '../layout/head'
 
 export default function Contact() {
   return (
     <>
+        <Head title='Contato'/>
         <Header/>
         <Banner title='Contato'/>
         <section className={styles.contact}>

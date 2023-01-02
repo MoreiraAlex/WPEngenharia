@@ -3,11 +3,13 @@ import styles from '../styles/pages/policy.module.css'
 import Header from '../layout/header'
 import Footer from '../layout/footer'
 import Banner from '../components/banner'
+import Head from '../layout/head'
 
 
 export default function Policy() {
   return (
     <>
+        <Head title='Política de Privacidade'/>
         <Header/>
         <div className={styles.title}>
             <Banner title='Política de Privacidade'/>
