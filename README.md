@@ -7,7 +7,7 @@ https://engenhariawp.alexmoreira.dev.br/
 
 WP Engenharia é uma aplicação frontend web construída para fins de estudo, tendo seu layout tambem responsivo.
 
-A aplicação consiste em simular um site institucional de uma construtora comun, mostrando seus principais serviços e toda sua historia. Alem de trazer depoimentos, pagina de contato e etc.
+A aplicação consiste em simular um site institucional de uma construtora comum, mostrando seus principais serviços e toda sua historia. Alem de trazer depoimentos, pagina de contato e etc.
 
 # Tecnologias utilizadas
 
