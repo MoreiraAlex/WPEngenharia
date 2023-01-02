@@ -6,17 +6,9 @@
 .noFound > section {
     margin: 0 auto;
     max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.noFound > section > :nth-child(1) {
-    width: 40%;
 }
 
 .noFound > section > section{
-    width: 50%;
     padding: 30px;
     background-color: var(--white);
     border-top: 2px solid var(--color-primary);
@@ -32,22 +24,6 @@
     .noFound {
         padding: 80px 20px;
         padding-top: 125px;
-    }
-}
-
-@media (max-width: 700px) {
-
-    .noFound > section {
-        flex-direction: column;
-        gap: 25px;
-    }
-
-    .noFound > section > :nth-child(1) {
-        width: 100%;
-    }
-
-    .noFound > section > section{
-        width: 100%;
     }
 }
 

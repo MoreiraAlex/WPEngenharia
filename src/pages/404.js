@@ -15,7 +15,6 @@ export default function NoFound(){
             <Header/>
             <section className={styles.noFound}>
                 <section>
-                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_AQcLsD.json" speed="1" loop autoplay/>
                     <section>
                         <Title 
                             title='Página não encontrada'
